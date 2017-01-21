@@ -3,13 +3,12 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>ポイント残高照会</title>
-  <script src="https://d2aoqdvxj7ngt6.cloudfront.net/common/js/jquery-1.8.3.min.js" type="text/javascript"></script>
-  <script src="https://d2aoqdvxj7ngt6.cloudfront.net/common/js/smartRollover.js" type="text/javascript"></script>
-  <script src="https://d2aoqdvxj7ngt6.cloudfront.net/common/js/common.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" type="text/css" href="test.css">
+
   <link rel="shortcut icon" href="https://d2aoqdvxj7ngt6.cloudfront.net/pc/favicon.ico" type="image/vnd.microsoft.icon" />
-  <script src="https://dnry98toriqao.cloudfront.net/placido/ui/common/js/link.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
   <header>
@@ -23,6 +22,25 @@
 
     </div>
   </header>
+
+  <div class="signup-modal-wrapper" id="signup-modal">
+    <div class="modal">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+      <div id="signup-form">
+        <h2>ポイント送金</h2>
+        <form action="./test.html">
+          <input class="form-control" type="text" placeholder="相手のID">
+          <input class="form-control" type="password" placeholder="送金ポイント額">
+          <button type="submit" id="submit-btn">送金</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
   <form name="myForm" method="post" action="" autocomplete="off">
     <div id="wrap" class="subpage">
 
@@ -87,7 +105,7 @@
             </tbody>
           </table>
 
-
+          <span class="btn message signup-show">ポイント送金</span>
 
         </div>
       </div>
@@ -99,6 +117,6 @@
     </div>
   </form>
 
-
+<script src="script.js"></script>
 </body>
 </html>
